@@ -6,4 +6,13 @@
 //  Copyright © 2017 Gkol. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class UsersListController: BaseTableViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "Users List"
+    }
+    
+}

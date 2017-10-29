@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,7 +20,62 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tkg-cC-6my" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-462" y="152"/>
+            <point key="canvasLocation" x="-422" y="128"/>
+        </scene>
+        <!--Users List Controller-->
+        <scene sceneID="O3z-2r-Q9l">
+            <objects>
+                <viewController storyboardIdentifier="UsersListControllerID" id="JZd-t4-IUR" customClass="UsersListController" customModule="TestQuandooTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O1A-tT-cod">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ySR-Wa-zD1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ID" id="HFV-38-DHR" customClass="UserCell" customModule="TestQuandooTask" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HFV-38-DHR" id="NP6-rP-ccb">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ySR-Wa-zD1" firstAttribute="leading" secondItem="AD5-kq-CmH" secondAttribute="leading" id="6V8-42-7dJ"/>
+                            <constraint firstItem="ySR-Wa-zD1" firstAttribute="top" secondItem="O1A-tT-cod" secondAttribute="top" id="Okj-kv-GdI"/>
+                            <constraint firstItem="ySR-Wa-zD1" firstAttribute="trailing" secondItem="AD5-kq-CmH" secondAttribute="trailing" id="eMn-mj-Zr4"/>
+                            <constraint firstItem="ySR-Wa-zD1" firstAttribute="bottom" secondItem="AD5-kq-CmH" secondAttribute="bottom" id="vHx-sY-iDS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AD5-kq-CmH"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="ySR-Wa-zD1" id="T4p-kg-U1m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mYV-dc-MJM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="373.60000000000002" y="97.601199400299862"/>
+        </scene>
+        <!--Posts List Controller-->
+        <scene sceneID="WN5-Ig-GMw">
+            <objects>
+                <viewController storyboardIdentifier="PostsListControllerID" id="6dp-P6-He4" customClass="PostsListController" customModule="TestQuandooTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zCE-c4-4W2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="lBG-wF-CCG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uiU-O3-V0t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1130" y="107"/>
         </scene>
     </scenes>
 </document>

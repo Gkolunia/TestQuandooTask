@@ -12,7 +12,10 @@ import UIKit
 class UsersAndPostsCoordinator: CoordinatorProtocol {
     
     func start(from navigationController: UINavigationController) {
-        
+        let usersListController = UIStoryboard.usersListController()
+        usersListController.delegate = UsersTableViewDelegate()
+        usersListController.dataSource = GenericTableViewDataSource<UserCell>(defaultDataSource: [UserModel()])
+        navigationController.show(usersListController, sender: nil)
     }
-    
+
 }

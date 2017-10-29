@@ -18,6 +18,16 @@
 		FAF53F661FA5FB0D006D1D89 /* UsersListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F651FA5FB0D006D1D89 /* UsersListController.swift */; };
 		FAF53F681FA5FB19006D1D89 /* PostsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F671FA5FB19006D1D89 /* PostsListController.swift */; };
 		FAF53F6A1FA60470006D1D89 /* AppCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F691FA60470006D1D89 /* AppCoordinatorTests.swift */; };
+		FAF53F6E1FA60D7C006D1D89 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F6D1FA60D7C006D1D89 /* BaseTableViewController.swift */; };
+		FAF53F711FA6165A006D1D89 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F701FA6165A006D1D89 /* UserModel.swift */; };
+		FAF53F731FA61666006D1D89 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F721FA61666006D1D89 /* PostModel.swift */; };
+		FAF53F751FA61A62006D1D89 /* StoryBoard+AppControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F741FA61A62006D1D89 /* StoryBoard+AppControllers.swift */; };
+		FAF53F771FA62004006D1D89 /* UsersAndPostsCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F761FA62004006D1D89 /* UsersAndPostsCoordinatorTests.swift */; };
+		FAF53F7A1FA62ED1006D1D89 /* BaseCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F791FA62ED1006D1D89 /* BaseCellProtocol.swift */; };
+		FAF53F7D1FA62F03006D1D89 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F7C1FA62F03006D1D89 /* UserCell.swift */; };
+		FAF53F801FA62F53006D1D89 /* GenericTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F7F1FA62F53006D1D89 /* GenericTableViewDataSource.swift */; };
+		FAF53F831FA62F84006D1D89 /* UsersTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F821FA62F84006D1D89 /* UsersTableViewDelegate.swift */; };
+		FAF53F851FA63087006D1D89 /* GenericTableViewDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F841FA63086006D1D89 /* GenericTableViewDataSourceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +65,16 @@
 		FAF53F651FA5FB0D006D1D89 /* UsersListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListController.swift; sourceTree = "<group>"; };
 		FAF53F671FA5FB19006D1D89 /* PostsListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListController.swift; sourceTree = "<group>"; };
 		FAF53F691FA60470006D1D89 /* AppCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTests.swift; sourceTree = "<group>"; };
+		FAF53F6D1FA60D7C006D1D89 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		FAF53F701FA6165A006D1D89 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		FAF53F721FA61666006D1D89 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		FAF53F741FA61A62006D1D89 /* StoryBoard+AppControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoryBoard+AppControllers.swift"; sourceTree = "<group>"; };
+		FAF53F761FA62004006D1D89 /* UsersAndPostsCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersAndPostsCoordinatorTests.swift; sourceTree = "<group>"; };
+		FAF53F791FA62ED1006D1D89 /* BaseCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCellProtocol.swift; sourceTree = "<group>"; };
+		FAF53F7C1FA62F03006D1D89 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		FAF53F7F1FA62F53006D1D89 /* GenericTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewDataSource.swift; sourceTree = "<group>"; };
+		FAF53F821FA62F84006D1D89 /* UsersTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewDelegate.swift; sourceTree = "<group>"; };
+		FAF53F841FA63086006D1D89 /* GenericTableViewDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewDataSourceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +125,11 @@
 		FA8977481FA5D993003E0CFB /* TestQuandooTask */ = {
 			isa = PBXGroup;
 			children = (
+				FAF53F6B1FA60D5F006D1D89 /* BaseClasses */,
 				FAF53F601FA5F68C006D1D89 /* UsersAndPostsModule */,
 				FA8977491FA5D993003E0CFB /* AppDelegate.swift */,
 				FAF53F5E1FA5ED29006D1D89 /* AppCoordinator.swift */,
+				FAF53F741FA61A62006D1D89 /* StoryBoard+AppControllers.swift */,
 				FAF53F5D1FA5ECDE006D1D89 /* Resources */,
 			);
 			path = TestQuandooTask;
@@ -118,6 +140,8 @@
 			children = (
 				FA89775E1FA5D993003E0CFB /* TestQuandooTaskTests.swift */,
 				FAF53F691FA60470006D1D89 /* AppCoordinatorTests.swift */,
+				FAF53F761FA62004006D1D89 /* UsersAndPostsCoordinatorTests.swift */,
+				FAF53F841FA63086006D1D89 /* GenericTableViewDataSourceTests.swift */,
 				FA8977601FA5D993003E0CFB /* Info.plist */,
 			);
 			path = TestQuandooTaskTests;
@@ -146,6 +170,9 @@
 		FAF53F601FA5F68C006D1D89 /* UsersAndPostsModule */ = {
 			isa = PBXGroup;
 			children = (
+				FAF53F811FA62F76006D1D89 /* Configurator */,
+				FAF53F7B1FA62EF6006D1D89 /* View */,
+				FAF53F6F1FA6164A006D1D89 /* Model */,
 				FAF53F621FA5F8AD006D1D89 /* Coordinator */,
 				FAF53F611FA5F8A4006D1D89 /* Controller */,
 			);
@@ -167,6 +194,65 @@
 				FAF53F631FA5F910006D1D89 /* UsersAndPostsCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		FAF53F6B1FA60D5F006D1D89 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				FAF53F7E1FA62F42006D1D89 /* Configurator */,
+				FAF53F781FA62EC0006D1D89 /* View */,
+				FAF53F6C1FA60D6A006D1D89 /* Controller */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		FAF53F6C1FA60D6A006D1D89 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAF53F6D1FA60D7C006D1D89 /* BaseTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FAF53F6F1FA6164A006D1D89 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAF53F701FA6165A006D1D89 /* UserModel.swift */,
+				FAF53F721FA61666006D1D89 /* PostModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAF53F781FA62EC0006D1D89 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAF53F791FA62ED1006D1D89 /* BaseCellProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAF53F7B1FA62EF6006D1D89 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAF53F7C1FA62F03006D1D89 /* UserCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAF53F7E1FA62F42006D1D89 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				FAF53F7F1FA62F53006D1D89 /* GenericTableViewDataSource.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		FAF53F811FA62F76006D1D89 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				FAF53F821FA62F84006D1D89 /* UsersTableViewDelegate.swift */,
+			);
+			path = Configurator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,10 +389,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF53F6E1FA60D7C006D1D89 /* BaseTableViewController.swift in Sources */,
+				FAF53F751FA61A62006D1D89 /* StoryBoard+AppControllers.swift in Sources */,
+				FAF53F731FA61666006D1D89 /* PostModel.swift in Sources */,
+				FAF53F711FA6165A006D1D89 /* UserModel.swift in Sources */,
+				FAF53F831FA62F84006D1D89 /* UsersTableViewDelegate.swift in Sources */,
+				FAF53F801FA62F53006D1D89 /* GenericTableViewDataSource.swift in Sources */,
+				FAF53F7A1FA62ED1006D1D89 /* BaseCellProtocol.swift in Sources */,
 				FAF53F5F1FA5ED29006D1D89 /* AppCoordinator.swift in Sources */,
 				FA89774A1FA5D993003E0CFB /* AppDelegate.swift in Sources */,
 				FAF53F681FA5FB19006D1D89 /* PostsListController.swift in Sources */,
 				FAF53F661FA5FB0D006D1D89 /* UsersListController.swift in Sources */,
+				FAF53F7D1FA62F03006D1D89 /* UserCell.swift in Sources */,
 				FAF53F641FA5F910006D1D89 /* UsersAndPostsCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,7 +409,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF53F771FA62004006D1D89 /* UsersAndPostsCoordinatorTests.swift in Sources */,
 				FAF53F6A1FA60470006D1D89 /* AppCoordinatorTests.swift in Sources */,
+				FAF53F851FA63087006D1D89 /* GenericTableViewDataSourceTests.swift in Sources */,
 				FA89775F1FA5D993003E0CFB /* TestQuandooTaskTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

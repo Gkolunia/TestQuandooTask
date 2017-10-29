@@ -6,4 +6,13 @@
 //  Copyright © 2017 Gkol. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class PostsListController: BaseTableViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "User's posts"
+    }
+    
+}
