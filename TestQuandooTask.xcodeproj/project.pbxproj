@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		FA89774A1FA5D993003E0CFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8977491FA5D993003E0CFB /* AppDelegate.swift */; };
-		FA89774C1FA5D993003E0CFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89774B1FA5D993003E0CFB /* ViewController.swift */; };
 		FA89774F1FA5D993003E0CFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA89774D1FA5D993003E0CFB /* Main.storyboard */; };
 		FA8977511FA5D993003E0CFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8977501FA5D993003E0CFB /* Assets.xcassets */; };
 		FA8977541FA5D993003E0CFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA8977521FA5D993003E0CFB /* LaunchScreen.storyboard */; };
 		FA89775F1FA5D993003E0CFB /* TestQuandooTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89775E1FA5D993003E0CFB /* TestQuandooTaskTests.swift */; };
 		FA89776A1FA5D993003E0CFB /* TestQuandooTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8977691FA5D993003E0CFB /* TestQuandooTaskUITests.swift */; };
+		FAF53F5F1FA5ED29006D1D89 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F5E1FA5ED29006D1D89 /* AppCoordinator.swift */; };
+		FAF53F641FA5F910006D1D89 /* UsersAndPostsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F631FA5F910006D1D89 /* UsersAndPostsCoordinator.swift */; };
+		FAF53F661FA5FB0D006D1D89 /* UsersListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F651FA5FB0D006D1D89 /* UsersListController.swift */; };
+		FAF53F681FA5FB19006D1D89 /* PostsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F671FA5FB19006D1D89 /* PostsListController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		FA8977461FA5D993003E0CFB /* TestQuandooTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestQuandooTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA8977491FA5D993003E0CFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA89774B1FA5D993003E0CFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA89774E1FA5D993003E0CFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA8977501FA5D993003E0CFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA8977531FA5D993003E0CFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		FA8977651FA5D993003E0CFB /* TestQuandooTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestQuandooTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA8977691FA5D993003E0CFB /* TestQuandooTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQuandooTaskUITests.swift; sourceTree = "<group>"; };
 		FA89776B1FA5D993003E0CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF53F5E1FA5ED29006D1D89 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		FAF53F631FA5F910006D1D89 /* UsersAndPostsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersAndPostsCoordinator.swift; sourceTree = "<group>"; };
+		FAF53F651FA5FB0D006D1D89 /* UsersListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListController.swift; sourceTree = "<group>"; };
+		FAF53F671FA5FB19006D1D89 /* PostsListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,10 @@
 		FA8977481FA5D993003E0CFB /* TestQuandooTask */ = {
 			isa = PBXGroup;
 			children = (
+				FAF53F601FA5F68C006D1D89 /* UsersAndPostsModule */,
 				FA8977491FA5D993003E0CFB /* AppDelegate.swift */,
-				FA89774B1FA5D993003E0CFB /* ViewController.swift */,
-				FA89774D1FA5D993003E0CFB /* Main.storyboard */,
-				FA8977501FA5D993003E0CFB /* Assets.xcassets */,
-				FA8977521FA5D993003E0CFB /* LaunchScreen.storyboard */,
-				FA8977551FA5D993003E0CFB /* Info.plist */,
+				FAF53F5E1FA5ED29006D1D89 /* AppCoordinator.swift */,
+				FAF53F5D1FA5ECDE006D1D89 /* Resources */,
 			);
 			path = TestQuandooTask;
 			sourceTree = "<group>";
@@ -123,6 +127,43 @@
 				FA89776B1FA5D993003E0CFB /* Info.plist */,
 			);
 			path = TestQuandooTaskUITests;
+			sourceTree = "<group>";
+		};
+		FAF53F5D1FA5ECDE006D1D89 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA89774D1FA5D993003E0CFB /* Main.storyboard */,
+				FA8977501FA5D993003E0CFB /* Assets.xcassets */,
+				FA8977521FA5D993003E0CFB /* LaunchScreen.storyboard */,
+				FA8977551FA5D993003E0CFB /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FAF53F601FA5F68C006D1D89 /* UsersAndPostsModule */ = {
+			isa = PBXGroup;
+			children = (
+				FAF53F621FA5F8AD006D1D89 /* Coordinator */,
+				FAF53F611FA5F8A4006D1D89 /* Controller */,
+			);
+			path = UsersAndPostsModule;
+			sourceTree = "<group>";
+		};
+		FAF53F611FA5F8A4006D1D89 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAF53F651FA5FB0D006D1D89 /* UsersListController.swift */,
+				FAF53F671FA5FB19006D1D89 /* PostsListController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FAF53F621FA5F8AD006D1D89 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FAF53F631FA5F910006D1D89 /* UsersAndPostsCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +300,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA89774C1FA5D993003E0CFB /* ViewController.swift in Sources */,
+				FAF53F5F1FA5ED29006D1D89 /* AppCoordinator.swift in Sources */,
 				FA89774A1FA5D993003E0CFB /* AppDelegate.swift in Sources */,
+				FAF53F681FA5FB19006D1D89 /* PostsListController.swift in Sources */,
+				FAF53F661FA5FB0D006D1D89 /* UsersListController.swift in Sources */,
+				FAF53F641FA5F910006D1D89 /* UsersAndPostsCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,7 +472,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QK893C648G;
-				INFOPLIST_FILE = TestQuandooTask/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TestQuandooTask/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ssss.TestQuandooTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -443,7 +487,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QK893C648G;
-				INFOPLIST_FILE = TestQuandooTask/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TestQuandooTask/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ssss.TestQuandooTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
