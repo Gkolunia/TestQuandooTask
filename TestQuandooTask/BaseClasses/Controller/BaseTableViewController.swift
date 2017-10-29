@@ -8,17 +8,18 @@
 
 import UIKit
 
-class BaseTableViewController: UIViewController {
+class BaseTableViewController: UIViewController, LoadingControllerProtocol {
     
 	@IBOutlet weak var tableView: UITableView!
     
     var dataSource : UITableViewDataSource?
-    var delegate : UITableViewDelegate?
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        tableView.delegate = delegate
-        tableView.dataSource = dataSource
+    func startLoading() {
+    
+    }
+    
+    func stopLoading() {
+        
     }
     
 }

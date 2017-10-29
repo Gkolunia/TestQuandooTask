@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA3002801FA65568008A4527 /* AddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30027F1FA65568008A4527 /* AddressModel.swift */; };
+		FA3002821FA66655008A4527 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA3002811FA66655008A4527 /* UserCell.xib */; };
 		FA89774A1FA5D993003E0CFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8977491FA5D993003E0CFB /* AppDelegate.swift */; };
 		FA89774F1FA5D993003E0CFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA89774D1FA5D993003E0CFB /* Main.storyboard */; };
 		FA8977511FA5D993003E0CFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8977501FA5D993003E0CFB /* Assets.xcassets */; };
@@ -28,6 +30,8 @@
 		FAF53F801FA62F53006D1D89 /* GenericTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F7F1FA62F53006D1D89 /* GenericTableViewDataSource.swift */; };
 		FAF53F831FA62F84006D1D89 /* UsersTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F821FA62F84006D1D89 /* UsersTableViewDelegate.swift */; };
 		FAF53F851FA63087006D1D89 /* GenericTableViewDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F841FA63086006D1D89 /* GenericTableViewDataSourceTests.swift */; };
+		FAF53F871FA64287006D1D89 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F861FA64287006D1D89 /* ServiceManager.swift */; };
+		FAF53F891FA64640006D1D89 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F881FA64640006D1D89 /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA30027F1FA65568008A4527 /* AddressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressModel.swift; sourceTree = "<group>"; };
+		FA3002811FA66655008A4527 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		FA8977461FA5D993003E0CFB /* TestQuandooTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestQuandooTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA8977491FA5D993003E0CFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA89774E1FA5D993003E0CFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,6 +81,8 @@
 		FAF53F7F1FA62F53006D1D89 /* GenericTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewDataSource.swift; sourceTree = "<group>"; };
 		FAF53F821FA62F84006D1D89 /* UsersTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewDelegate.swift; sourceTree = "<group>"; };
 		FAF53F841FA63086006D1D89 /* GenericTableViewDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewDataSourceTests.swift; sourceTree = "<group>"; };
+		FAF53F861FA64287006D1D89 /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		FAF53F881FA64640006D1D89 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +138,7 @@
 				FA8977491FA5D993003E0CFB /* AppDelegate.swift */,
 				FAF53F5E1FA5ED29006D1D89 /* AppCoordinator.swift */,
 				FAF53F741FA61A62006D1D89 /* StoryBoard+AppControllers.swift */,
+				FAF53F861FA64287006D1D89 /* ServiceManager.swift */,
 				FAF53F5D1FA5ECDE006D1D89 /* Resources */,
 			);
 			path = TestQuandooTask;
@@ -218,7 +227,9 @@
 			isa = PBXGroup;
 			children = (
 				FAF53F701FA6165A006D1D89 /* UserModel.swift */,
+				FA30027F1FA65568008A4527 /* AddressModel.swift */,
 				FAF53F721FA61666006D1D89 /* PostModel.swift */,
+				FAF53F881FA64640006D1D89 /* UserViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -235,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				FAF53F7C1FA62F03006D1D89 /* UserCell.swift */,
+				FA3002811FA66655008A4527 /* UserCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -362,6 +374,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA3002821FA66655008A4527 /* UserCell.xib in Resources */,
 				FA8977541FA5D993003E0CFB /* LaunchScreen.storyboard in Resources */,
 				FA8977511FA5D993003E0CFB /* Assets.xcassets in Resources */,
 				FA89774F1FA5D993003E0CFB /* Main.storyboard in Resources */,
@@ -393,7 +406,9 @@
 				FAF53F751FA61A62006D1D89 /* StoryBoard+AppControllers.swift in Sources */,
 				FAF53F731FA61666006D1D89 /* PostModel.swift in Sources */,
 				FAF53F711FA6165A006D1D89 /* UserModel.swift in Sources */,
+				FA3002801FA65568008A4527 /* AddressModel.swift in Sources */,
 				FAF53F831FA62F84006D1D89 /* UsersTableViewDelegate.swift in Sources */,
+				FAF53F871FA64287006D1D89 /* ServiceManager.swift in Sources */,
 				FAF53F801FA62F53006D1D89 /* GenericTableViewDataSource.swift in Sources */,
 				FAF53F7A1FA62ED1006D1D89 /* BaseCellProtocol.swift in Sources */,
 				FAF53F5F1FA5ED29006D1D89 /* AppCoordinator.swift in Sources */,
@@ -401,6 +416,7 @@
 				FAF53F681FA5FB19006D1D89 /* PostsListController.swift in Sources */,
 				FAF53F661FA5FB0D006D1D89 /* UsersListController.swift in Sources */,
 				FAF53F7D1FA62F03006D1D89 /* UserCell.swift in Sources */,
+				FAF53F891FA64640006D1D89 /* UserViewModel.swift in Sources */,
 				FAF53F641FA5F910006D1D89 /* UsersAndPostsCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
