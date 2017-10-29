@@ -17,6 +17,7 @@
 		FAF53F641FA5F910006D1D89 /* UsersAndPostsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F631FA5F910006D1D89 /* UsersAndPostsCoordinator.swift */; };
 		FAF53F661FA5FB0D006D1D89 /* UsersListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F651FA5FB0D006D1D89 /* UsersListController.swift */; };
 		FAF53F681FA5FB19006D1D89 /* PostsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F671FA5FB19006D1D89 /* PostsListController.swift */; };
+		FAF53F6A1FA60470006D1D89 /* AppCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F691FA60470006D1D89 /* AppCoordinatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		FAF53F631FA5F910006D1D89 /* UsersAndPostsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersAndPostsCoordinator.swift; sourceTree = "<group>"; };
 		FAF53F651FA5FB0D006D1D89 /* UsersListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListController.swift; sourceTree = "<group>"; };
 		FAF53F671FA5FB19006D1D89 /* PostsListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListController.swift; sourceTree = "<group>"; };
+		FAF53F691FA60470006D1D89 /* AppCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				FA89775E1FA5D993003E0CFB /* TestQuandooTaskTests.swift */,
+				FAF53F691FA60470006D1D89 /* AppCoordinatorTests.swift */,
 				FA8977601FA5D993003E0CFB /* Info.plist */,
 			);
 			path = TestQuandooTaskTests;
@@ -312,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF53F6A1FA60470006D1D89 /* AppCoordinatorTests.swift in Sources */,
 				FA89775F1FA5D993003E0CFB /* TestQuandooTaskTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

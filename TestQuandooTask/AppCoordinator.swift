@@ -20,11 +20,11 @@ protocol CoordinatorProtocol {
 ///The class provides root navigation for child coordinators.
 class AppCoordinator {
     
+    /// childCoordinator keeps reference on last coordinator
+    var childCoordinator : CoordinatorProtocol?
+    
     private let rootWindow : UIWindow
     private let rootNavigationController : UINavigationController = UINavigationController()
-
-    /// childCoordinator keeps reference on last coordinator
-    private var childCoordinator : CoordinatorProtocol?
     
     init(_ defaultWindow: UIWindow) {
         rootWindow = defaultWindow
@@ -35,6 +35,8 @@ class AppCoordinator {
     
     func start() {
         // Start child controller.
+        childCoordinator = UsersAndPostsCoordinator()
+        childCoordinator?.start(from: rootNavigationController)
     }
     
 }
