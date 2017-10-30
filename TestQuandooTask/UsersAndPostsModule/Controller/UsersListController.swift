@@ -8,26 +8,28 @@
 
 import UIKit
 
-class UsersListController: BaseTableViewController, UsersListControllerProtocol, UITableViewDelegate {
+protocol UsersListPreparing {
+    func loadUsersList()
+    func doOnSelect(_ userViewModel: UserViewModel)
+}
 
-    var presenter : UsersPresenter?
+class UsersListController: BaseTableViewController, UsersListShowing {
+
+    var presenter : UsersListPreparing!
+    private var tableViewConfigurator = GenericTableViewConfigurator<UserCell>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Users List"
-        presenter?.loadUsersList()
+        presenter.loadUsersList()
+        tableViewConfigurator.configurate(tableView)
+        tableViewConfigurator.selectionHandler = {[unowned self] (userViewModel) in
+            self.presenter.doOnSelect(userViewModel)
+        }
     }
     
     func show(_ users: [UserViewModel]) {
-        tableView.register(UINib.init(nibName: "UserCell", bundle: nil), forCellReuseIdentifier: UserCell.cellId())
-        dataSource = GenericTableViewDataSource<UserCell>(defaultDataSource: users)
-        tableView.dataSource = dataSource
-        tableView.reloadData()
-    }
-    
-    // UITableViewDelegate - protocol
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        tableViewConfigurator.dataSource = users
     }
     
 }

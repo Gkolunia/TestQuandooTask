@@ -8,16 +8,14 @@
 
 import UIKit
 
-struct StoryBoard {
+fileprivate struct StoryBoard {
     static let kUsersListControllerId = "UsersListControllerID"
     static let kPostsListControllerId = "PostsListControllerID"
 }
 
-/**
- * @brief Default controllers of application in main story board. Just for convenience usage.
- */
+// MARK: - Default controllers of application in main story board. Just for convenience usage.
 extension UIStoryboard {
-    
+
     class func main() -> UIStoryboard {
         return UIStoryboard(name: "Main", bundle: nil)
     }
@@ -26,7 +24,7 @@ extension UIStoryboard {
         return main().instantiateViewController(withIdentifier: StoryBoard.kUsersListControllerId) as! UsersListController
     }
     
-    class func potsListController() -> PostsListController {
+    class func postsListController() -> PostsListController {
         return main().instantiateViewController(withIdentifier: StoryBoard.kPostsListControllerId) as! PostsListController
     }
     

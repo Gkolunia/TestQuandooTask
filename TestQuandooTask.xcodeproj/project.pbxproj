@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A39519311FA67FC4000272B2 /* UsersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39519301FA67FC4000272B2 /* UsersPresenter.swift */; };
+		A39519341FA7A4D9000272B2 /* UsersAndPostsServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39519331FA7A4D9000272B2 /* UsersAndPostsServiceManager.swift */; };
 		FA3002801FA65568008A4527 /* AddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30027F1FA65568008A4527 /* AddressModel.swift */; };
 		FA3002821FA66655008A4527 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA3002811FA66655008A4527 /* UserCell.xib */; };
 		FA89774A1FA5D993003E0CFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8977491FA5D993003E0CFB /* AppDelegate.swift */; };
@@ -25,10 +27,9 @@
 		FAF53F731FA61666006D1D89 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F721FA61666006D1D89 /* PostModel.swift */; };
 		FAF53F751FA61A62006D1D89 /* StoryBoard+AppControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F741FA61A62006D1D89 /* StoryBoard+AppControllers.swift */; };
 		FAF53F771FA62004006D1D89 /* UsersAndPostsCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F761FA62004006D1D89 /* UsersAndPostsCoordinatorTests.swift */; };
-		FAF53F7A1FA62ED1006D1D89 /* BaseCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F791FA62ED1006D1D89 /* BaseCellProtocol.swift */; };
+		FAF53F7A1FA62ED1006D1D89 /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F791FA62ED1006D1D89 /* ConfigurableCell.swift */; };
 		FAF53F7D1FA62F03006D1D89 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F7C1FA62F03006D1D89 /* UserCell.swift */; };
 		FAF53F801FA62F53006D1D89 /* GenericTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F7F1FA62F53006D1D89 /* GenericTableViewDataSource.swift */; };
-		FAF53F831FA62F84006D1D89 /* UsersTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F821FA62F84006D1D89 /* UsersTableViewDelegate.swift */; };
 		FAF53F851FA63087006D1D89 /* GenericTableViewDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F841FA63086006D1D89 /* GenericTableViewDataSourceTests.swift */; };
 		FAF53F871FA64287006D1D89 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F861FA64287006D1D89 /* ServiceManager.swift */; };
 		FAF53F891FA64640006D1D89 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53F881FA64640006D1D89 /* UserViewModel.swift */; };
@@ -52,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A39519301FA67FC4000272B2 /* UsersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersPresenter.swift; sourceTree = "<group>"; };
+		A39519331FA7A4D9000272B2 /* UsersAndPostsServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersAndPostsServiceManager.swift; sourceTree = "<group>"; };
 		FA30027F1FA65568008A4527 /* AddressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressModel.swift; sourceTree = "<group>"; };
 		FA3002811FA66655008A4527 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		FA8977461FA5D993003E0CFB /* TestQuandooTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestQuandooTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,10 +79,9 @@
 		FAF53F721FA61666006D1D89 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		FAF53F741FA61A62006D1D89 /* StoryBoard+AppControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoryBoard+AppControllers.swift"; sourceTree = "<group>"; };
 		FAF53F761FA62004006D1D89 /* UsersAndPostsCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersAndPostsCoordinatorTests.swift; sourceTree = "<group>"; };
-		FAF53F791FA62ED1006D1D89 /* BaseCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCellProtocol.swift; sourceTree = "<group>"; };
+		FAF53F791FA62ED1006D1D89 /* ConfigurableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
 		FAF53F7C1FA62F03006D1D89 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		FAF53F7F1FA62F53006D1D89 /* GenericTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewDataSource.swift; sourceTree = "<group>"; };
-		FAF53F821FA62F84006D1D89 /* UsersTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewDelegate.swift; sourceTree = "<group>"; };
 		FAF53F841FA63086006D1D89 /* GenericTableViewDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewDataSourceTests.swift; sourceTree = "<group>"; };
 		FAF53F861FA64287006D1D89 /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		FAF53F881FA64640006D1D89 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
@@ -110,6 +112,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A395192F1FA67FB3000272B2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A39519301FA67FC4000272B2 /* UsersPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A39519321FA7A4A2000272B2 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A39519331FA7A4D9000272B2 /* UsersAndPostsServiceManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		FA89773D1FA5D993003E0CFB = {
 			isa = PBXGroup;
 			children = (
@@ -179,7 +197,8 @@
 		FAF53F601FA5F68C006D1D89 /* UsersAndPostsModule */ = {
 			isa = PBXGroup;
 			children = (
-				FAF53F811FA62F76006D1D89 /* Configurator */,
+				A39519321FA7A4A2000272B2 /* Manager */,
+				A395192F1FA67FB3000272B2 /* Presenter */,
 				FAF53F7B1FA62EF6006D1D89 /* View */,
 				FAF53F6F1FA6164A006D1D89 /* Model */,
 				FAF53F621FA5F8AD006D1D89 /* Coordinator */,
@@ -237,7 +256,7 @@
 		FAF53F781FA62EC0006D1D89 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FAF53F791FA62ED1006D1D89 /* BaseCellProtocol.swift */,
+				FAF53F791FA62ED1006D1D89 /* ConfigurableCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -255,14 +274,6 @@
 			isa = PBXGroup;
 			children = (
 				FAF53F7F1FA62F53006D1D89 /* GenericTableViewDataSource.swift */,
-			);
-			path = Configurator;
-			sourceTree = "<group>";
-		};
-		FAF53F811FA62F76006D1D89 /* Configurator */ = {
-			isa = PBXGroup;
-			children = (
-				FAF53F821FA62F84006D1D89 /* UsersTableViewDelegate.swift */,
 			);
 			path = Configurator;
 			sourceTree = "<group>";
@@ -402,15 +413,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A39519341FA7A4D9000272B2 /* UsersAndPostsServiceManager.swift in Sources */,
 				FAF53F6E1FA60D7C006D1D89 /* BaseTableViewController.swift in Sources */,
 				FAF53F751FA61A62006D1D89 /* StoryBoard+AppControllers.swift in Sources */,
 				FAF53F731FA61666006D1D89 /* PostModel.swift in Sources */,
 				FAF53F711FA6165A006D1D89 /* UserModel.swift in Sources */,
 				FA3002801FA65568008A4527 /* AddressModel.swift in Sources */,
-				FAF53F831FA62F84006D1D89 /* UsersTableViewDelegate.swift in Sources */,
 				FAF53F871FA64287006D1D89 /* ServiceManager.swift in Sources */,
+				A39519311FA67FC4000272B2 /* UsersPresenter.swift in Sources */,
 				FAF53F801FA62F53006D1D89 /* GenericTableViewDataSource.swift in Sources */,
-				FAF53F7A1FA62ED1006D1D89 /* BaseCellProtocol.swift in Sources */,
+				FAF53F7A1FA62ED1006D1D89 /* ConfigurableCell.swift in Sources */,
 				FAF53F5F1FA5ED29006D1D89 /* AppCoordinator.swift in Sources */,
 				FA89774A1FA5D993003E0CFB /* AppDelegate.swift in Sources */,
 				FAF53F681FA5FB19006D1D89 /* PostsListController.swift in Sources */,

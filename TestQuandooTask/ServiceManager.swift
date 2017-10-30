@@ -17,29 +17,28 @@ enum RequsetType: String {
 typealias ErrorMessage = (title: String, description: String?)
 typealias CompletionHandler<T> = (_ succes: Bool, _ object: [T]?,_ errorMessage: ErrorMessage?) -> ()
 
-struct NetworkDomainErrors {
+/// Base errors for network service
+fileprivate struct NetworkDomainErrors {
     static let noInternetConnection : ErrorMessage = ("No Internet Connection!", "Please connect to WiFi to see the latest data.")
     static let somethingGoesWrong : ErrorMessage = ("Something goes wrong.", nil)
 }
 
-struct ApiUrls {
-    static let users = "/users"
-    static let posts = "/posts"
-}
-
-struct ServiceConstants {
+/// Constants needed for creating base url.
+fileprivate struct ServiceConstants {
     static let host = "jsonplaceholder.typicode.com"
     static let scheme = "https"
 }
 
 class ServiceManager {
 
-    /**
-     * @brief Base method which construct url request with params and http body.
-     */
-    static func makeRequest<T: Codable>(_ urlString: String, _ httpParams: [String : String]? = nil, _ requestType: RequsetType, handler:@escaping CompletionHandler<T>) {
-
-        let urlComponents = NSURLComponents()
+    /// Return url request.
+    ///
+    /// - Parameters:
+    ///   - urlString: path of API URL
+    ///   - httpParams: Header parameters of request
+    ///   - requestType: HTTP type request
+    static func makeRequest(_ urlString: String, _ httpParams: [String : String]? = nil, _ requestType: RequsetType) -> URLRequest? {
+        var urlComponents = URLComponents()
         urlComponents.scheme = ServiceConstants.scheme
         urlComponents.host = ServiceConstants.host
         urlComponents.path = urlString
@@ -53,11 +52,29 @@ class ServiceManager {
         }
         
         if let url = urlComponents.url {
-            let session = URLSession.shared
-            let request = NSMutableURLRequest(url: url)
+            var request = URLRequest(url: url)
             request.httpMethod = requestType.rawValue
-            request.cachePolicy = NSURLRequest.CachePolicy.reloadIgnoringCacheData
-            let task = session.dataTask(with: request as URLRequest) { (data, response, error) in
+            request.cachePolicy = URLRequest.CachePolicy.reloadIgnoringCacheData
+            return request
+        }
+        
+        return nil
+        
+    }
+    
+    
+    /// Executes url request which is returned from makeRequest function.
+    ///
+    /// - Parameters:
+    ///   - urlString: path of API URL
+    ///   - httpParams: Header parameters of request
+    ///   - requestType: HTTP type request
+    ///   - handler: Callback is called when url requst is finished
+    static func doRequest<T: Codable>(_ urlString: String, _ httpParams: [String : String]? = nil, _ requestType: RequsetType, handler: @escaping CompletionHandler<T>) {
+
+        if let request = makeRequest(urlString, httpParams, requestType) {
+            let session = URLSession.shared
+            let task = session.dataTask(with: request) { (data, response, error) in
                 
                 guard let response: HTTPURLResponse = response as? HTTPURLResponse else {
                     if let error = error {
@@ -101,15 +118,12 @@ class ServiceManager {
             }
             task.resume()
         }
+        else {
+            
+            handler(false, nil, NetworkDomainErrors.somethingGoesWrong)
+            
+        }
         
     }
     
-}
-
-extension ServiceManager : UsersLoaderManagerProtocol {
-    
-    func loadUsersList(_ handler: @escaping (Bool, [UserModel]?, ErrorMessage?) -> ()) {
-        ServiceManager.makeRequest(ApiUrls.users, nil, .get, handler: handler)
-    }
-
 }

@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserCellId" rowHeight="124" id="mNe-MG-oY8" customClass="UserCell" customModule="TestQuandooTask" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserCell" rowHeight="124" id="mNe-MG-oY8" customClass="UserCell" customModule="TestQuandooTask" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="124"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mNe-MG-oY8" id="EcH-Ob-azz">
@@ -65,7 +65,7 @@
                 <outlet property="fullNameLabel" destination="maV-cK-eWu" id="nfL-p3-y5j"/>
                 <outlet property="userNameLabel" destination="zOK-mI-1T2" id="3aP-ri-q0D"/>
             </connections>
-            <point key="canvasLocation" x="-358.5" y="-84"/>
+            <point key="canvasLocation" x="-56" y="-96"/>
         </tableViewCell>
     </objects>
 </document>

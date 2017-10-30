@@ -13,7 +13,7 @@ struct CellModelStub {
     let name : String = "Name"
 }
 
-class CellMock: UITableViewCell, BaseCellProtocol {
+class CellMock: UITableViewCell, ConfigurableCell {
     typealias T = CellModelStub
     
     func setup(with item: CellMock.T) {
