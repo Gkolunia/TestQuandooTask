@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Model is used for filling views.
 struct UserViewModel {
     let fullName : String
     let userName : String

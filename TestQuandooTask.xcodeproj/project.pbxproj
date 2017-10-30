@@ -128,6 +128,22 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		A3B7B70E1FA7BEDE0019AC43 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				FAF53F861FA64287006D1D89 /* ServiceManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		A3B7B70F1FA7BEF30019AC43 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FAF53F741FA61A62006D1D89 /* StoryBoard+AppControllers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		FA89773D1FA5D993003E0CFB = {
 			isa = PBXGroup;
 			children = (
@@ -151,12 +167,11 @@
 		FA8977481FA5D993003E0CFB /* TestQuandooTask */ = {
 			isa = PBXGroup;
 			children = (
+				A3B7B70F1FA7BEF30019AC43 /* Extensions */,
 				FAF53F6B1FA60D5F006D1D89 /* BaseClasses */,
 				FAF53F601FA5F68C006D1D89 /* UsersAndPostsModule */,
 				FA8977491FA5D993003E0CFB /* AppDelegate.swift */,
 				FAF53F5E1FA5ED29006D1D89 /* AppCoordinator.swift */,
-				FAF53F741FA61A62006D1D89 /* StoryBoard+AppControllers.swift */,
-				FAF53F861FA64287006D1D89 /* ServiceManager.swift */,
 				FAF53F5D1FA5ECDE006D1D89 /* Resources */,
 			);
 			path = TestQuandooTask;
@@ -227,6 +242,7 @@
 		FAF53F6B1FA60D5F006D1D89 /* BaseClasses */ = {
 			isa = PBXGroup;
 			children = (
+				A3B7B70E1FA7BEDE0019AC43 /* Manager */,
 				FAF53F7E1FA62F42006D1D89 /* Configurator */,
 				FAF53F781FA62EC0006D1D89 /* View */,
 				FAF53F6C1FA60D6A006D1D89 /* Controller */,
@@ -247,8 +263,8 @@
 			children = (
 				FAF53F701FA6165A006D1D89 /* UserModel.swift */,
 				FA30027F1FA65568008A4527 /* AddressModel.swift */,
-				FAF53F721FA61666006D1D89 /* PostModel.swift */,
 				FAF53F881FA64640006D1D89 /* UserViewModel.swift */,
+				FAF53F721FA61666006D1D89 /* PostModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";

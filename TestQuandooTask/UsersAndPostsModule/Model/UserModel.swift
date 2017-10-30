@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// User model is parsed from json.
 struct UserModel : Codable {
     let id : Int
     let username : String

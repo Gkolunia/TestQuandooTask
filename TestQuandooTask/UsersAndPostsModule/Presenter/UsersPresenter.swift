@@ -8,18 +8,26 @@
 
 import Foundation
 
+/// Manager which can provide list of users.
 protocol UsersLoaderManager {
     func loadUsersList(_ handler:@escaping CompletionHandler<UserModel>)
 }
 
+/// Controller which shows list of users
 protocol UsersListShowing : LoadingController {
     func show(_ users: [UserViewModel])
 }
 
+/// Coordinator which make navigation to posts by particular user.
 protocol UserPostsNavigator : class {
+    
+    /// Navigate to posts list.
+    ///
+    /// - Parameter userViewModel: Model of user 
     func showPosts(with userViewModel: UserViewModel)
 }
 
+/// Implementation of preparing users list view models for showinf them in controller.
 class UsersPresenter : UsersListPreparing {
     let usersLoader : UsersLoaderManager
     unowned let usersListController : UsersListShowing
@@ -43,6 +51,10 @@ class UsersPresenter : UsersListPreparing {
         userPostsNavigator.showPosts(with: userViewModel)
     }
     
+    /// Creating view models from models
+    ///
+    /// - Parameter userModels: Array of user models
+    /// - Returns: List of user view models.
     private func prepareUsersViewModels(from userModels: [UserModel]?) -> [UserViewModel] {
         return userModels?.map{ UserViewModel(with: $0) } ?? []
     }

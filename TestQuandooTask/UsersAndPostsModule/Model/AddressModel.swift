@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Address model is parsed from json.
 struct AddressModel : Codable {
     let street : String
     let suite : String
