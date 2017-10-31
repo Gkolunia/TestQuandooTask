@@ -11,6 +11,8 @@ import UIKit
 /// Generic configurator for table view. Work with ConfigurableCell.
 class GenericTableViewConfigurator<CellType: ConfigurableCell & UITableViewCell> : NSObject, UITableViewDataSource, UITableViewDelegate {
     
+    var bundleNib = Bundle.main
+    
     /// Array of items for table view.
     var dataSource : [CellType.ItemType] {
         didSet {
@@ -35,7 +37,7 @@ class GenericTableViewConfigurator<CellType: ConfigurableCell & UITableViewCell>
         tableView = defaultTableView
         tableView?.dataSource = self
         tableView?.delegate = self
-        tableView?.register(UINib.init(nibName: CellType.cellNibName(), bundle: nil), forCellReuseIdentifier: CellType.cellId())
+        tableView?.register(UINib.init(nibName: CellType.cellNibName(), bundle: bundleNib), forCellReuseIdentifier: CellType.cellId())
     }
     
     // UITableViewDataSource protocol

@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		A39519311FA67FC4000272B2 /* UsersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39519301FA67FC4000272B2 /* UsersPresenter.swift */; };
 		A39519341FA7A4D9000272B2 /* UsersAndPostsServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39519331FA7A4D9000272B2 /* UsersAndPostsServiceManager.swift */; };
+		A3B7B7141FA8FE5F0019AC43 /* CellMock.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3B7B7131FA8FE5F0019AC43 /* CellMock.xib */; };
+		A3B7B7161FA9028B0019AC43 /* UsersPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B7B7151FA9028B0019AC43 /* UsersPresenterTests.swift */; };
+		A3B7B7181FA90B710019AC43 /* UserViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B7B7171FA90B710019AC43 /* UserViewModelTests.swift */; };
+		A3B7B71A1FA90E2C0019AC43 /* ServiceManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B7B7191FA90E2C0019AC43 /* ServiceManagerTests.swift */; };
 		FA3002801FA65568008A4527 /* AddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30027F1FA65568008A4527 /* AddressModel.swift */; };
 		FA3002821FA66655008A4527 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA3002811FA66655008A4527 /* UserCell.xib */; };
 		FA89774A1FA5D993003E0CFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8977491FA5D993003E0CFB /* AppDelegate.swift */; };
@@ -55,6 +59,10 @@
 /* Begin PBXFileReference section */
 		A39519301FA67FC4000272B2 /* UsersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersPresenter.swift; sourceTree = "<group>"; };
 		A39519331FA7A4D9000272B2 /* UsersAndPostsServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersAndPostsServiceManager.swift; sourceTree = "<group>"; };
+		A3B7B7131FA8FE5F0019AC43 /* CellMock.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellMock.xib; sourceTree = "<group>"; };
+		A3B7B7151FA9028B0019AC43 /* UsersPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersPresenterTests.swift; sourceTree = "<group>"; };
+		A3B7B7171FA90B710019AC43 /* UserViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModelTests.swift; sourceTree = "<group>"; };
+		A3B7B7191FA90E2C0019AC43 /* ServiceManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManagerTests.swift; sourceTree = "<group>"; };
 		FA30027F1FA65568008A4527 /* AddressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressModel.swift; sourceTree = "<group>"; };
 		FA3002811FA66655008A4527 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		FA8977461FA5D993003E0CFB /* TestQuandooTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestQuandooTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,7 +191,11 @@
 				FA89775E1FA5D993003E0CFB /* TestQuandooTaskTests.swift */,
 				FAF53F691FA60470006D1D89 /* AppCoordinatorTests.swift */,
 				FAF53F761FA62004006D1D89 /* UsersAndPostsCoordinatorTests.swift */,
+				A3B7B7131FA8FE5F0019AC43 /* CellMock.xib */,
 				FAF53F841FA63086006D1D89 /* GenericTableViewDataSourceTests.swift */,
+				A3B7B7151FA9028B0019AC43 /* UsersPresenterTests.swift */,
+				A3B7B7171FA90B710019AC43 /* UserViewModelTests.swift */,
+				A3B7B7191FA90E2C0019AC43 /* ServiceManagerTests.swift */,
 				FA8977601FA5D993003E0CFB /* Info.plist */,
 			);
 			path = TestQuandooTaskTests;
@@ -412,6 +424,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3B7B7141FA8FE5F0019AC43 /* CellMock.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,7 +467,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAF53F771FA62004006D1D89 /* UsersAndPostsCoordinatorTests.swift in Sources */,
+				A3B7B7181FA90B710019AC43 /* UserViewModelTests.swift in Sources */,
+				A3B7B71A1FA90E2C0019AC43 /* ServiceManagerTests.swift in Sources */,
 				FAF53F6A1FA60470006D1D89 /* AppCoordinatorTests.swift in Sources */,
+				A3B7B7161FA9028B0019AC43 /* UsersPresenterTests.swift in Sources */,
 				FAF53F851FA63087006D1D89 /* GenericTableViewDataSourceTests.swift in Sources */,
 				FA89775F1FA5D993003E0CFB /* TestQuandooTaskTests.swift in Sources */,
 			);

@@ -31,13 +31,15 @@ fileprivate struct ServiceConstants {
 
 class ServiceManager {
 
+    var session = URLSession.shared
+    
     /// Return url request.
     ///
     /// - Parameters:
     ///   - urlString: path of API URL
     ///   - httpParams: Header parameters of request
     ///   - requestType: HTTP type request
-    static func makeRequest(_ urlString: String, _ httpParams: [String : String]? = nil, _ requestType: RequsetType) -> URLRequest? {
+    func makeRequest(_ urlString: String, _ httpParams: [String : String]? = nil, _ requestType: RequsetType) -> URLRequest? {
         var urlComponents = URLComponents()
         urlComponents.scheme = ServiceConstants.scheme
         urlComponents.host = ServiceConstants.host
@@ -70,18 +72,21 @@ class ServiceManager {
     ///   - httpParams: Header parameters of request
     ///   - requestType: HTTP type request
     ///   - handler: Callback is called when url requst is finished
-    static func doRequest<T: Codable>(_ urlString: String, _ httpParams: [String : String]? = nil, _ requestType: RequsetType, handler: @escaping CompletionHandler<T>) {
+    func doRequest<T: Codable>(_ urlString: String, _ httpParams: [String : String]? = nil, _ requestType: RequsetType, handler: @escaping CompletionHandler<T>) {
 
         if let request = makeRequest(urlString, httpParams, requestType) {
-            let session = URLSession.shared
             let task = session.dataTask(with: request) { (data, response, error) in
                 
                 guard let response: HTTPURLResponse = response as? HTTPURLResponse else {
                     if let error = error {
-                        handler(false, nil, ("Network Error.", error.localizedDescription))
+                        DispatchQueue.main.async {
+                            handler(false, nil, ("Network Error.", error.localizedDescription))
+                        }
                     }
                     else {
-                        handler(false, nil, NetworkDomainErrors.somethingGoesWrong)
+                        DispatchQueue.main.async {
+                            handler(false, nil, NetworkDomainErrors.somethingGoesWrong)
+                        }
                     }
                     return
                 }
@@ -119,11 +124,8 @@ class ServiceManager {
             task.resume()
         }
         else {
-            
             handler(false, nil, NetworkDomainErrors.somethingGoesWrong)
-            
         }
-        
     }
     
 }

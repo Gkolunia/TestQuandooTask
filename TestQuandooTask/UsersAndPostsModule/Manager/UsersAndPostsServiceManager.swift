@@ -17,13 +17,13 @@ fileprivate struct ApiUrls {
 // MARK: - Extends Service Manager for getting users list
 extension ServiceManager : UsersLoaderManager {
     func loadUsersList(_ handler: @escaping (Bool, [UserModel]?, ErrorMessage?) -> ()) {
-        ServiceManager.doRequest(ApiUrls.users, nil, .get, handler: handler)
+        doRequest(ApiUrls.users, nil, .get, handler: handler)
     }
 }
 
 // MARK: - Extends Service Manager for getting post list
 extension ServiceManager {
     func loadPostsList(with userId: Int, _ handler: @escaping (Bool, [UserModel]?, ErrorMessage?) -> ()) {
-        ServiceManager.doRequest(ApiUrls.posts, ["userId" : String(userId)], .get, handler: handler)
+        doRequest(ApiUrls.posts, ["userId" : String(userId)], .get, handler: handler)
     }
 }

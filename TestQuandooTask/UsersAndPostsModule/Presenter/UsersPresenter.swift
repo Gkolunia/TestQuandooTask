@@ -41,9 +41,9 @@ class UsersPresenter : UsersListPreparing {
     
     func loadUsersList() {
         usersListController.startLoading()
-        usersLoader.loadUsersList {[unowned self] (success, list, error) in
-            self.usersListController.show(self.prepareUsersViewModels(from:list))
-            self.usersListController.stopLoading()
+        usersLoader.loadUsersList {[weak self] (success, list, error) in
+            self?.usersListController.show((self?.prepareUsersViewModels(from:list))!)
+            self?.usersListController.stopLoading()
         }
     }
     

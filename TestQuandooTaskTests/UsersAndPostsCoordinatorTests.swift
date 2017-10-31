@@ -31,7 +31,7 @@ class UsersAndPostsCoordinatorTests: XCTestCase {
         childCoordinator?.start(from: navigationController)
         XCTAssert(navigationController.viewControllers.count > 0, "First Controller has not been pushed.") // On start coordinator should push first view controller to the stack
         if let usersList = navigationController.viewControllers[0] as? UsersListController {
-            XCTAssert(usersList.presenter != nil, "Coordinator should set presenter")
+            XCTAssertTrue(usersList.presenter != nil, "Coordinator should set presenter")
         }
         else {
             XCTFail("First pushed controller should be UsersListController")
