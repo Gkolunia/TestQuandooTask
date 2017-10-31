@@ -27,7 +27,7 @@ protocol UserPostsNavigator : class {
     func showPosts(with userViewModel: UserViewModel)
 }
 
-/// Implementation of preparing users list view models for showinf them in controller.
+/// Implementation of preparing users list view models for showing them in controller.
 class UsersPresenter : UsersListPreparing {
     let usersLoader : UsersLoaderManager
     unowned let usersListController : UsersListShowing

@@ -9,5 +9,6 @@
 import Foundation
 
 struct PostModel : Codable {
-    
+    let title : String
+    let body : String
 }

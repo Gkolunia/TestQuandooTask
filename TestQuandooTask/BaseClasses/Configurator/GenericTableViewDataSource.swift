@@ -55,6 +55,7 @@ class GenericTableViewConfigurator<CellType: ConfigurableCell & UITableViewCell>
     
     // UITableViewDelegate - protocol
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.reloadRows(at: [indexPath], with: .fade)
         if let selectionHandler = selectionHandler {
             selectionHandler(dataSource[indexPath.row])
         }

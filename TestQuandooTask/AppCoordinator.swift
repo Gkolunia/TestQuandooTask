@@ -14,7 +14,7 @@ protocol CoordinatorProtocol {
     /// Method which starts navigation in current coordinator
     ///
     /// - Parameter navigationController: root navigation controller.
-    func start(from navigationController: UIViewController)
+    func start(from navigationController: UINavigationController)
 }
 
 ///The class provides root navigation for child coordinators.
