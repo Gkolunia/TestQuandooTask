@@ -23,7 +23,7 @@ extension ServiceManager : UsersLoaderManager {
 
 // MARK: - Extends Service Manager for getting post list
 extension ServiceManager : PostsLoaderManager {
-    func loadPostsList(with userId: Int, _ handler: @escaping (Bool, [UserModel]?, ErrorMessage?) -> ()) {
+    func loadPostsList(with userId: Int, _ handler: @escaping (Bool, [PostModel]?, ErrorMessage?) -> ()) {
         doRequest(ApiUrls.posts, ["userId" : String(userId)], .get, handler: handler)
     }
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct PostModel : Codable {
+struct PostModel : Codable, PostViewModel {
     let title : String
     let body : String
 }

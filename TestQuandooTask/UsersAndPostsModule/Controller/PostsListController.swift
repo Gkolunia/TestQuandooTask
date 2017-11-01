@@ -10,21 +10,24 @@ import UIKit
 
 /// Interface of preparing posts list data
 protocol PostsListPreparing {
+    var userViewModel : UserViewModel { get }
     func loadPosts()
 }
 
 class PostsListController: BaseTableViewController, ShowingPostsList {
 
     var postsPresenter : PostsListPreparing!
+    private var tableViewConfigurator = GenericTableViewConfigurator<PostCell>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "User's posts"
+        title = postsPresenter.userViewModel.fullName
+        tableViewConfigurator.configurate(tableView)
         postsPresenter.loadPosts()
     }
     
-    func showPosts(_ posts: [PostModel]) {
-        
+    func showPosts(_ posts: [PostViewModel]) {
+        tableViewConfigurator.dataSource = posts
     }
     
 }

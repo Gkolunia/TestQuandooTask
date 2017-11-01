@@ -15,7 +15,7 @@ class UsersAndPostsCoordinator: CoordinatorProtocol, UserPostsNavigator {
     
     func showPosts(with userViewModel: UserViewModel) {
         let postsController = UIStoryboard.postsListController()
-        postsController.postsPresenter = PostsPresenter(ServiceManager(), postsController)
+        postsController.postsPresenter = PostsPresenter(ServiceManager(), postsController, userViewModel)
         rootController.pushViewController(postsController, animated: true)
     }
     
@@ -25,7 +25,7 @@ class UsersAndPostsCoordinator: CoordinatorProtocol, UserPostsNavigator {
         let usersPresenter = UsersPresenter(ServiceManager(), usersListController)
         usersPresenter.userPostsNavigator = self
         usersListController.presenter = usersPresenter
-        navigationController.show(usersListController, sender: nil)
+        rootController.pushViewController(usersListController, animated: true)
     }
 
 }
